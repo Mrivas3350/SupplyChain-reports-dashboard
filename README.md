@@ -1,51 +1,22 @@
-# Supply Chain Monitoring Dashboard
+# Inventory Risk Monitoring Dashboard (Supply Chain)
 
-## 📊 Executive Overview
+Dashboard operativo para **monitoreo de inventarios y riesgo** con semáforo **CRÍTICO / LÍMITE / OK**.
+Enfocado en **visibilidad, anticipación y control** para entornos industriales.
 
-Este proyecto representa la evolución de un sistema de reportes operativos automatizados hacia un dashboard de monitoreo orientado a gestión.
+## Business Impact
+- Detecta riesgo de quiebre antes de impactar producción
+- Prioriza SKUs críticos para seguimiento
+- Mejora visibilidad operativa con KPIs simples y explicables
+- Apoya decisiones en jefatura/gerencia (monitoreo, no reemplazo del criterio)
 
-El objetivo no es solo generar datos, sino transformarlos en información clara para anticipar riesgos operativos y fortalecer la toma de decisiones en Supply Chain.
+## Output (Dashboard)
+**1) Stock vs Mínimo (Semáforo)**
+![Stock semaphore](assets/01_stock_semaforo.png)
 
----
+**2) Operational Risk Dashboard (KPIs + ranking)**
+![Operational dashboard](assets/02_dashboard_cards_ranking.png)
 
-## 🎯 Objetivo de Gestión
-
-En entornos productivos exigentes, los problemas no suelen originarse por falta de información, sino por falta de visibilidad oportuna.
-
-Este dashboard permite:
-
-- Monitorear nivel de inventarios
-- Visualizar días de cobertura
-- Estimar rotación mensual
-- Identificar riesgos (Bajo / Medio / Alto)
-- Detectar potenciales quiebres antes de impactar producción
-
-La tecnología es el medio.  
-La anticipación es el objetivo.
-
----
-
-## ⚙️ Indicadores incluidos
-
-### 1️⃣ Stock actual vs Stock mínimo
-Permite visualizar desvíos críticos de inventario.
-
-### 2️⃣ Días de cobertura
-Mide cuánto tiempo puede sostenerse la operación con el stock actual.
-
-### 3️⃣ Punto de reorden
-Calculado como:
-Reorder Point = Demanda diaria × Lead Time
-
-### 4️⃣ Clasificación de riesgo
-- ALTO: stock < mínimo o cobertura < lead time
-- MEDIO: stock < punto de reorden
-- BAJO: operación estable
-
-### 5️⃣ Rotación estimada
-Rotación mensual promedio para seguimiento de dinámica de inventarios.
-
----
-
-## 📂 Estructura del Proyecto
-
+## How to run
+```bash
+pip install -r requirements.txt
+python src/generate_dashboard.py

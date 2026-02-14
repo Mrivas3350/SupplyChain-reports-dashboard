@@ -1,0 +1,10 @@
+date,sku,description,stock_on_hand,min_stock,daily_demand,lead_time_days
+2026-01-01,SKU001,Insumo A,120,80,6,10
+2026-01-01,SKU002,Insumo B,40,60,5,7
+2026-01-01,SKU003,Insumo C,300,120,8,14
+2026-02-01,SKU001,Insumo A,90,80,6,10
+2026-02-01,SKU002,Insumo B,30,60,5,7
+2026-02-01,SKU003,Insumo C,260,120,8,14
+2026-03-01,SKU001,Insumo A,75,80,6,10
+2026-03-01,SKU002,Insumo B,20,60,5,7
+2026-03-01,SKU003,Insumo C,240,120,8,14
